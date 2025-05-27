@@ -13,7 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 }
 
 // === INCLUSIÓN DEL CONTROLADOR ===
-require_once __DIR__ . '/controllers/productocontroller.php';
+require_once __DIR__ . '/../controllers/ProductoController.php';
+
 $controller = new ProductoController();
 
 // === ENTRADA JSON (para POST, PUT, DELETE) ===
